@@ -1,8 +1,5 @@
 a=int(input())
-for i in range(1,a+1):
-    for j in range(1,a+1):
-        if(i==j or j==a-i+1):
-            print(a-i+1,end=" ")
-        else:
-            print(' ',end="")
+for i in range(a):
+    for j in range(i,a):
+        print(j+1,end=" ")
     print()
